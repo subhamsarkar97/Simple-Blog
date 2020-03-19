@@ -30,7 +30,6 @@ gem 'jbuilder', '~> 2.7'
 
 
 #Make error better looking
-gem 'better_errors', '~> 2.6'
 
 #Bulma Css
 gem 'bulma-rails', '~> 0.8.0'
@@ -57,6 +56,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'guard', '~> 2.16', '>= 2.16.1'
+  gem 'better_errors', '~> 2.6'
+
 end
 
 group :test do
