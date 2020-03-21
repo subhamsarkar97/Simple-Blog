@@ -1,0 +1,16 @@
+<%= content_for :page_title, @post.title %>.
+
+<section class="section">
+    <div class="container">
+        <h1 class="title">Welcome</h1><br><br>
+        <h1 class="title"><%= @post.title %></h1>
+        <p class="content"><%= @post.content %></p>
+        <%= link_to "Edit" , edit_post_path() , :class => "button is-primary" %>
+
+        <%= link_to "DELETE", post_path , method: :delete , data: { confirm: "Are you sure?"}, :class => "button is-danger" %> 
+        
+
+    </div>
+</section>
+
+
