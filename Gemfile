@@ -40,6 +40,10 @@ gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
 
 
+
+
+
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -57,6 +61,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'guard', '~> 2.16', '>= 2.16.1'
   gem 'better_errors', '~> 2.6'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 
 end
 

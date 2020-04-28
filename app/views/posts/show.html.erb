@@ -9,7 +9,21 @@
 
         <%= link_to "DELETE", post_path , method: :delete , data: { confirm: "Are you sure?"}, :class => "button is-danger" %> 
         
-
+        <section class="section comments">
+            <div class ="container">
+                <h2 class="subtitle is-5">
+                    <strong>
+                        Comments(<%= @post.comments.count%>)
+                        <%= render @post.comments %>
+                    </strong>
+                    <div class="comment-form">
+                        <hr  />
+                        <h3 class="subtitle is-3">Leave a reply</h3>
+                        <%= render 'comments/form' %>
+                    <div>    
+                </h2> 
+            </div>
+        </section>
     </div>
 </section>
 
