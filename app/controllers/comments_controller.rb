@@ -1,6 +1,4 @@
 class CommentsController < ApplicationController
-
-    
     def index
     end    
     
@@ -10,8 +8,7 @@ class CommentsController < ApplicationController
         #finding the post based on the @post variable and go to the comment model and create
         redirect_to post_path(@post)
     end
-
-    
+     
     def destroy
         @post = Post.find(params[:post_id])
         @comment = @post.comments.find(params[:id])
@@ -21,10 +18,6 @@ class CommentsController < ApplicationController
     
     private 
     def comments_params
-        params.require(:comment).permit(:name, :content)
+        params.require(:comment).permit(:name, :comment)
     end    
-
-    
-    
-       
 end
